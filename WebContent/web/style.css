@@ -1,0 +1,320 @@
+
+
+/* Start Content link style */
+/*
+The right order of link pseudo-classes: Link-Visited-Hover-Focus-Active.
+http://www.w3schools.com/CSS/css_pseudo_classes.asp
+http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states/
+*/
+a
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  color: #005F9D;
+}
+
+/* Adds special style to an unvisited link. */
+a:link
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  color: #005F9D;
+}
+
+/* Adds special style to a visited link. */
+a:visited, a.visited
+{
+  font-family: Trebuchet MS,Arial, Helvetica, Sans-Serif;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  color: #595140;
+}
+
+/* :hover - adds special style to an element when you mouse over it. */
+a:hover, a.hover
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: #595140;
+}
+
+/* Finish Content link style */
+
+/* Resert some headings default style & links default style for links in headings*/
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+  font-family: "Times New Roman", Georgia, Times, Serif;
+  font-size: 25px;
+
+  text-align: left;
+  color: #536A2F;
+}
+
+h2, h2 a, h2 a:link, h2 a:visited, h2 a:hover
+{
+  font-family: "Times New Roman", Georgia, Times, Serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  color: #536A2F;
+}
+
+h3, h3 a, h3 a:link, h3 a:visited, h3 a:hover
+{
+  font-family: "Times New Roman", Georgia, Times, Serif;
+  font-size: 20px;
+  text-align: left;
+  color: #A5C275;
+}
+
+h4, h4 a, h4 a:link, h4 a:visited, h4 a:hover
+{
+  font-family: "Times New Roman", Georgia, Times, Serif;
+  font-size: 16px;
+  text-align: left;
+  color: #242E14;
+}
+
+h5, h5 a, h5 a:link, h5 a:visited, h5 a:hover
+{
+  font-family: "Times New Roman", Georgia, Times, Serif;
+  font-size: 14px;
+  text-align: left;
+  color: #242E14;
+}
+
+h6, h6 a, h6 a:link, h6 a:visited, h6 a:hover
+{
+  font-family: "Times New Roman", Georgia, Times, Serif;
+  font-size: 13px;
+  text-align: left;
+  color: #242E14;
+}
+/* Finish Content headings Fonts & Colors  */
+
+/* end PostContent */
+
+/* begin PostBullets */
+/* Start Content list */
+
+ul
+{
+  list-style-type: none;
+  color: #3B362B;
+  margin:0;
+  padding:0;
+}
+
+li
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 11px;
+  text-align: left;
+  margin-left: 12px;
+}
+
+
+
+.Post ul li
+{
+  padding:0px 0 0px 14px;
+  background-image: url('images/PostBullets.png');
+  background-repeat:no-repeat;
+  margin:0.5em 0 0.5em 0;
+  line-height:1.2em;
+}
+
+
+/* Finish Content list */
+/* end PostBullets */
+
+/* begin PostQuote */
+/* Start blockquote */
+
+blockquote p
+{
+  color:#13190B;
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-style: italic;
+  font-weight: normal;
+  text-align: left;
+}
+
+blockquote
+{
+  border-color:#C7C0B2;
+  border-width: 0px;
+  border-style: solid;
+
+  margin:10px 10px 10px 50px;
+  padding:5px 5px 5px 28px;
+
+  background-color:#EFF4E6;
+
+  background-image:url('images/PostQuote.png');
+  background-position:left top;
+  background-repeat:no-repeat;
+}
+
+
+
+/* Finish blockuote */
+/* end PostQuote */
+
+/* begin Button */
+button.Button, a.Button
+{
+  position:relative;
+  display:inline-block;
+  width: auto;
+  outline:none;
+  border:none;
+  background:none;
+  line-height:28px;
+  margin:0;
+  padding:0;
+  overflow: visible;
+  cursor: default;
+  text-decoration: none !important;
+}
+
+
+/*This HACK needed for ie7 (button position)*/
+*:first-child+html button.Button, *:first-child+html a.Button
+{
+  display:list-item;
+  list-style-type:none;
+  float:left;
+}
+
+
+.Button .btn
+{
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: auto;
+  z-index: 0;
+  height: 28px;
+  color: #000000;
+  white-space: nowrap;
+  float: left;
+}
+
+.Button .t
+{
+  height:28px;
+  white-space: normal;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: bold;
+   
+  text-align: left;
+  line-height: 28px;
+  text-decoration: none !important;
+}
+
+input, select
+{
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: bold;
+   
+}
+
+.Button .active
+{
+  color: #F4F8E8;
+}
+
+.Button .hover,  a.Button:hover
+{
+  color: #000000;
+  text-decoration: none !important;
+}
+
+.Button .active .r
+{
+  top: -56px;
+}
+
+.Button .hover .r
+{
+  top: -28px;
+}
+
+.Button .r
+{
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 84px;
+}
+
+
+.Button .r span
+{
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width:417px;
+  height: 84px;
+}
+
+
+.Button .active .l
+{
+  top: -56px;
+}
+
+.Button .hover .l
+{
+  top: -28px;
+}
+
+.Button .l
+{
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 8px;
+  height: 84px;
+}
+
+
+.Button .l, .Button .r span
+{
+  background-image: url('images/Button.png');
+}
+
+/* end Button */

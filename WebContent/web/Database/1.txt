@@ -1,0 +1,2 @@
+
+create table vacancy(prid varchar2(25),prname varchar2(35),compname varchar2(35),indtype varchar2(25),loc varchar2(25),exp varchar2(35),sal number(10),jstatus varchar2(25),candreq varchar2(150),jobdescr varchar2(100),website varchar2(35),contperson varchar2(25),phn varchar2(25),email varchar2(45),addr varchar2(100));

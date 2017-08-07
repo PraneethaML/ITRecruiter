@@ -1,0 +1,13 @@
+admin:
+
+cerate table admin(uname varchar2(20),pwd varchar2(20));
+
+
+userreg:
+
+create table userreg(un varchar2(20) primary key,pwd varchar2(20),userid varchar2(20),fn varchar2(20),ln varchar2(20), gen varchar2(10),dob date,addr varchar2(30),city varchar2(30),country varchar2(40),state varchar2(20), qual varchar2(20),tech varchar2(20),expmoths number(10),descountry varchar2(40), phone number(15),email varchar2(40),mobile number(15))
+
+provider :
+create table provider(prid varchar2(20),uname varchar2(20)primary key,pwd varchar2(20),cname varchar2(50),conname varchar2(40),desig varchar2(20),dept varchar2(20),email varchar2(40),phone number(15),fax number(15),addr varchar2(30),country varchar2(40),state varchar2(20),city varchar2(30),pin number(10));
+
+
