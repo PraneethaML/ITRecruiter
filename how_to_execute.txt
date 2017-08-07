@@ -1,0 +1,35 @@
+copy and paste the project(webapplication1 folder) in d -drive.
+
+in SQL prompt:
+. create user ud identified by ud;  enter
+. grant all privileges to ud; enter
+. conn ud/ud;
+. exit
+
+open another sql prompt and login with username=ud and password=ud (not with scott/ tiger or system /system)
+
+
+
+To import the database dump file:
+
+In command prompt:
+
+. imp enter
+. username=ud
+. password=ud
+. drag the dump from the project folder and remove the quotations (")  enter
+
+give the buffer size as 3000(max) enter
+
+answers for the question
+1. n
+2.y
+3.y
+4.y
+5.y
+
+
+create a dsn name called: netpod(start- control panel-admin tools-datasource ODBC -add- check odbc for oracle-finish-give ur dsn name(netpod)-ok-ok)
+
+
+to verify the db details write the query as: select * from tab;(after login into ur db username (ud) and password (ud)
